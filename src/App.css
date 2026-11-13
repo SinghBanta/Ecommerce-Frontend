@@ -1,2 +1,6 @@
 
 @import "tailwindcss";
+
+@theme {
+  --font-gamesans: 'GameSans', sans-serif;
+}
