@@ -16,7 +16,7 @@ const Navbar = () => {
                         </label>
                         <ul class="hidden items-center gap-7 lg:flex">
                             <li class="group relative">
-                                <a href="#" aria-current="page" class="border-b border-stone-900 pb-1 text-[13px] font-medium uppercase tracking-[0.12em] text-stone-900 transition-colors duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900">
+                                <a href="#" aria-current="page" class="border-b border-stone-900 flex items-center gap-1 pb-1 text-[13px] font-medium uppercase tracking-[0.12em] text-stone-600 transition-colors duration-200 hover:text-stone-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900">
                                     New In
                                 </a>
                             </li>
