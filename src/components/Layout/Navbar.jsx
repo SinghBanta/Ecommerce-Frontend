@@ -4,7 +4,7 @@ const Navbar = () => {
       
             <header class="w-full bg-white">
                 <div class="hidden items-center justify-center bg-stone-900 py-3 sm:flex">
-                    <p class="text-xs font-medium flex items-center gap-2 tracking-[0.2em] text-stone-300 font-gamesans flex"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark-check preview-icon"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/><path d="m9 10 2 2 4-4"/></svg>COMPLIMENTARY SHIPPING ON ORDERS OVER<span className="text-[#FF6900]">$200</span></p>
+                    <p class="text-xs font-medium flex items-center gap-2 tracking-[0.2em] text-stone-300 font-gamesans flex"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bookmark-check preview-icon"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/><path d="m9 10 2 2 4-4"/></svg>COMPLIMENTARY SHIPPING ON ORDERS OVER<span className="text-[#C2500A]">$200</span></p>
                 </div>
                 <nav class="border-b border-stone-200" aria-label="Main navigation">
                     <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -68,18 +68,18 @@ const Navbar = () => {
                         </div>
 
                         <a href="#" class=" lg:text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 rounded-md">
-                            < img src="src/assets/logo-original.png" className="h-20" />
+                            < img src="src/assets/logo-original-Photoroom.png" className="h-20" />
                         </a>
 
                         <div class="flex items-center justify-end gap-1 lg:w-1/3">
-                            <div class="hidden items-center md:flex">
+                            {/* <div class="hidden items-center md:flex">
                                 <div class="group relative flex items-center">
                                     <svg class="pointer-events-none absolute left-3 h-4 w-4 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35M17 10.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" />
                                     </svg>
                                     <input type="search" placeholder="Search" className="w-0 rounded-full border border-transparent bg-stone-100 py-2 pl-9 pr-3 text-sm text-stone-700 placeholder:text-stone-400 transition-all duration-300 ease-out focus:w-52 focus:border-[#202936] focus:bg-white focus:outline-none focus-visible:ring-1 focus-visible:ring-[#202936] group-hover:w-52" />
                                 </div>
-                            </div>
+                            </div> */}
 
                             <button type="button" class="rounded-md p-2.5 text-stone-700 transition-colors duration-200 hover:bg-stone-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900" aria-label="Wishlist">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart preview-icon"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></svg>
@@ -91,7 +91,7 @@ const Navbar = () => {
 
                             <button type="button" class="relative rounded-md p-2.5 text-stone-700 transition-colors duration-200 hover:bg-stone-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900" aria-label="Cart, 2 items">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart preview-icon"><path d="m2.05 2.05 1.099-.028a1 1 0 0 1 1.008.815l2.69 14.347A1 1 0 0 0 7.83 18H18" /><path d="M4.563 5h16.435a1 1 0 0 1 .981 1.204l-1.026 6.226A2 2 0 0 1 18.962 14H6.25" /><circle cx="18" cy="20" r="2" /><circle cx="8" cy="20" r="2" /></svg>
-                                <span class="absolute right-1 top-1 flex h-4 w-4 items-center bg-[#FF6900] justify-center rounded-full text-[10px] font-medium text-white">2</span>
+                                <span class="absolute right-1 top-1 flex h-4 w-4 items-center bg-[#C2500A] justify-center rounded-full text-[10px] font-medium text-white">2</span>
                             </button>
                         </div>
                     </div>
