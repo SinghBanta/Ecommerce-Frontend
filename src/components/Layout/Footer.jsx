@@ -1,152 +1,212 @@
+
 import React from "react";
+import {
+  Users,
+  Camera,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  ArrowUpRight,
+} from "lucide-react";
 
 const Footer = () => {
-  const quickLinks = [
-    "Home",
-    "Shop",
-    "Categories",
-    "New Arrivals",
-    "About Us",
-    "Contact Us",
-  ];
-
-  const customerLinks = [
-    "Help Center",
-    "Shipping Information",
-    "Returns & Refunds",
-    "FAQs",
-    "Track Order",
-  ];
-
   return (
-   <footer className="bg-[url('src/assets/footerbackground.png')] bg-cover bg-center bg-no-repeat text-white overflow-hidden">
-    <div className="bg-Blur">
-      <div className="max-w-[1280px] mx-auto px-6 pt-40">
+    <footer className="bg-[#101010] text-white">
+      <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
 
         {/* Main Footer */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-12">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10">
 
-          {/* Brand */}
-          <div className="lg:col-span-2">
-            <a href="#" class=" lg:text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 rounded-md invert">
-                            < img src="src/assets/logo-original-Photoroom.png" className="h-20" />
-                        </a>
+          {/* Brand Section */}
+          <div>
+            <a
+              href="/"
+              className="inline-block text-3xl font-extrabold tracking-tight"
+            >
+              Shop<span className="text-[#F56900]">Console</span>
+            </a>
 
-            <p className="text-gray-400 text-sm mt-4 max-w-sm leading-7">
-              Smarter Shopping. Better Living.
-              Discover quality products, amazing deals
-              and a seamless shopping experience.
+            <p className="mt-5 max-w-xs text-sm leading-7 text-gray-400">
+              Your one-stop destination for quality products,
+              smart shopping and unbeatable value. Discover
+              products that make everyday living better.
             </p>
 
-            {/* Social Links */}
-            <div className="flex gap-3 mt-6">
-              {["f", "𝕏", "▶", "in"].map((item, index) => (
-                <a
-                  key={index}
-                  href="#"
-                  aria-label={`Social media ${item}`}
-                  className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 text-gray-300 hover:bg-[#F56900] hover:border-[#F56900] hover:text-white transition-all duration-300"
-                >
-                  {item}
-                </a>
-              ))}
+            {/* Social Icons */}
+            <div className="mt-6 flex items-center gap-3">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-gray-400 transition-all duration-300 hover:border-[#F56900] hover:bg-[#F56900] hover:text-white"
+              >
+                <Users size={18} strokeWidth={1.7} />
+              </a>
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 text-gray-400 transition-all duration-300 hover:border-[#F56900] hover:bg-[#F56900] hover:text-white"
+              >
+                <Camera size={18} strokeWidth={1.7} />
+              </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-5">
+            <h3 className="text-lg font-semibold text-white">
               Quick Links
             </h3>
 
-            <ul className="space-y-3 text-sm text-gray-400">
-              {quickLinks.map((link) => (
-                <li key={link}>
+            <div className="mt-3 h-0.5 w-10 rounded-full bg-[#F56900]" />
+
+            <ul className="mt-6 space-y-3 text-sm text-gray-400">
+              {[
+                ["Home", "/"],
+                ["Shop", "/shop"],
+                ["New Arrivals", "/new-arrivals"],
+                ["Best Sellers", "/best-sellers"],
+                ["About Us", "/about"],
+                ["Contact Us", "/contact"],
+              ].map(([name, link]) => (
+                <li key={name}>
                   <a
-                    href="#"
-                    className="hover:text-[#F56900] transition-colors duration-300"
+                    href={link}
+                    className="inline-flex items-center gap-1 transition-colors duration-300 hover:text-[#F56900]"
                   >
-                    {link}
+                    {name}
+                    <ArrowUpRight
+                      size={13}
+                      className="opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                    />
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Customer Service */}
+          {/* Customer Support */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-5">
-              Customer Service
+            <h3 className="text-lg font-semibold text-white">
+              Customer Support
             </h3>
 
-            <ul className="space-y-3 text-sm text-gray-400">
-              {customerLinks.map((link) => (
-                <li key={link}>
+            <div className="mt-3 h-0.5 w-10 rounded-full bg-[#F56900]" />
+
+            <ul className="mt-6 space-y-4 text-sm text-gray-400">
+              {[
+                ["Shipping Information", "/shipping"],
+                ["Returns & Refunds", "/returns"],
+                ["Privacy Policy", "/privacy"],
+                ["Terms & Conditions", "/terms"],
+                ["FAQs", "/faq"],
+              ].map(([name, link]) => (
+                <li key={name}>
                   <a
-                    href="#"
-                    className="hover:text-[#F56900] transition-colors duration-300"
+                    href={link}
+                    className="transition-colors duration-300 hover:text-[#F56900]"
                   >
-                    {link}
+                    {name}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Contact Information */}
           <div>
-            <h3 className="text-white font-semibold text-lg mb-5">
+            <h3 className="text-lg font-semibold text-white">
               Get In Touch
             </h3>
 
-            <ul className="space-y-4 text-sm text-gray-400">
-              <li>
+            <div className="mt-3 h-0.5 w-10 rounded-full bg-[#F56900]" />
+
+            <ul className="mt-6 space-y-5 text-sm text-gray-400">
+
+              <li className="flex items-start gap-3">
+                <Phone
+                  size={18}
+                  className="shrink-0 text-[#F56900]"
+                />
                 <a
-                  href="mailto:support@shopconsole.com"
-                  className="hover:text-[#F56900] transition-colors"
+                  href="tel:+910000000000"
+                  className="transition-colors hover:text-[#F56900]"
                 >
-                  ✉ support@shopconsole.com
+                  +91 00000 00000
                 </a>
               </li>
 
-              <li>
+              <li className="flex items-start gap-3">
+                <Mail
+                  size={18}
+                  className="shrink-0 text-[#F56900]"
+                />
                 <a
-                  href="tel:+919876543210"
-                  className="hover:text-[#F56900] transition-colors"
+                  href="mailto:support@example.com"
+                  className="break-all transition-colors hover:text-[#F56900]"
                 >
-                  ☎ +91 98765 43210
+                  support@example.com
                 </a>
               </li>
 
-              <li className="flex items-start gap-2">
-                <span>⌖</span>
-                <span>New Delhi, India</span>
+              <li className="flex items-start gap-3">
+                <Clock
+                  size={18}
+                  className="shrink-0 text-[#F56900]"
+                />
+                <span>
+                  Monday – Saturday
+                  <br />
+                  9:00 AM – 6:00 PM
+                </span>
               </li>
+
+              <li className="flex items-start gap-3">
+                <MapPin
+                  size={18}
+                  className="shrink-0 text-[#F56900]"
+                />
+                <span>
+                  Your Business Address,
+                  <br />
+                  India
+                </span>
+              </li>
+
             </ul>
           </div>
-
         </div>
 
         {/* Bottom Footer */}
-        <div className="border-t border-gray-800 py-6 flex flex-col md:flex-row justify-between items-center gap-5">
+        <div className="mt-14 flex flex-col gap-5 border-t border-white/10 pt-7 sm:flex-row sm:items-center sm:justify-between">
 
-          <p className="text-gray-500 text-sm text-center">
-            © {new Date().getFullYear()} ShopConsole. All rights reserved.
+          <p className="text-sm text-gray-500">
+            © {new Date().getFullYear()}{" "}
+            <span className="font-semibold text-white">
+              Shop<span className="text-[#F56900]">Console</span>
+            </span>
+            . All Rights Reserved.
           </p>
 
-          {/* Payment Methods */}
-          <div className="flex items-center gap-4 flex-wrap justify-center">
-            <span className="font-bold italic text-blue-400">VISA</span>
-            <span className="font-bold text-white">Mastercard</span>
-            <span className="font-bold italic text-white">PayPal</span>
-            <span className="font-bold text-[#F56900]">UPI</span>
+          <div className="flex flex-wrap gap-5 text-sm text-gray-500">
+            <a
+              href="/privacy"
+              className="transition-colors hover:text-[#F56900]"
+            >
+              Privacy Policy
+            </a>
+
+            <a
+              href="/terms"
+              className="transition-colors hover:text-[#F56900]"
+            >
+              Terms & Conditions
+            </a>
           </div>
 
         </div>
-
       </div>
-    </div>
-
     </footer>
   );
 };

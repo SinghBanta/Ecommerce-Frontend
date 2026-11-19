@@ -25,3 +25,7 @@
 .bg-Blur {
     backdrop-filter: blur(3px);
 }
+
+footer.bg-\[\#101010\].text-white {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 64%, rgb(245 105 0) 149%);
+};
