@@ -1,5 +1,10 @@
 
 import React from 'react'
+import mobile from "/src/assets/product-cat-2.webp";
+import headphones from "/src/assets/product-cat-1.webp";
+import smartwatch from "/src/assets/product-cat-4.webp";
+import earbuds from "/src/assets/product-cat-5.webp";
+import speakers from "/src/assets/banner-speaker.png";
 
 const CategorySection = () => {
 
@@ -7,12 +12,12 @@ const CategorySection = () => {
         {
             id: 1,
             name: "Mobile Tablets",
-            image: "src/assets/product-cat-2.webp"
+            image: "mobile tablets"
         },
         {
             id: 2,
             name: "Headphones",
-            image: "src/assets/product-cat-1.webp"
+            image: "headphones"
         },
         {
             id: 3,
