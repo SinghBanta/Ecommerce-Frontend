@@ -1,3 +1,6 @@
+import logo from "../../assets/logo-original-Photoroom.png";
+
+
 const Navbar = () => {
 
     return (
@@ -68,7 +71,11 @@ const Navbar = () => {
                     </div>
 
                     <a href="#" class=" lg:text-center focus:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 rounded-md">
-                        < img src="src/assets/logo-original-Photoroom.png" className="h-20" />
+                        <img
+                            src={logo}
+                            alt="ShopConsole Logo"
+                            className="w-[180px] h-auto object-contain"
+                        />
                     </a>
 
                     <div class="flex items-center justify-end gap-1 lg:w-1/3">
